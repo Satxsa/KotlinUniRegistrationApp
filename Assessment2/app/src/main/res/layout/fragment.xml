@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+        <TextView
+            android:id="@+id/studentDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+
+            android:inputType="textMultiLine"
+            android:text="Name: Sathsindu Perera
+                      DOB: 11/08/2001
+                      Course: Bachelor of IT
+                      Student ID:s4561289"
+            android:outlineSpotShadowColor="@color/blue"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/cardView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.607" />
+
+        <TextView
+            android:id="@+id/txtDynamicMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to MyVU"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toTopOf="@+id/studentDetails"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.362"
+            tools:layout_editor_absoluteX="0dp"
+            android:textColor="@color/white"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="44dp"
+            android:backgroundTint="#D31E88E5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.878">
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="18dp"
+                android:text="Recommended Courses"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/subject1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="65dp"
+                android:layout_marginRight="220dp"
+                android:background="@drawable/courseborder"
+                android:backgroundTint="#9DDDE4"
+                android:text="AWS Short Course"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/subject2"
+                android:layout_width="175dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="65dp"
+                android:layout_marginRight="18dp"
+                android:backgroundTint="#9DDDE4"
+                android:text="Mobile Application Development"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:background="@drawable/courseborder"/>
+
+            <TextView
+                android:id="@+id/subject3"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="165dp"
+                android:layout_marginRight="18dp"
+                android:backgroundTint="#9DDDE4"
+                android:text="Full Stack Programming"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:background="@drawable/courseborder"/>
+
+            <TextView
+                android:id="@+id/subject4"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="165dp"
+                android:layout_marginRight="222dp"
+                android:backgroundTint="#9DDDE4"
+                android:text="Introduction to ICT"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:background="@drawable/courseborder"/>
+
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

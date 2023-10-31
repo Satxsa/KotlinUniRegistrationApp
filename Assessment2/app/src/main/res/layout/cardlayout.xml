@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="1dp"
+    app:contentPadding="8dp"
+    android:background="@drawable/navbg">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="13dp"
+        android:background="@drawable/navbg">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/subject"
+        android:layout_width="345dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="25dp"
+        android:textSize="35sp" />
+
+
+    <TextView
+        android:id="@+id/lecturer"
+        android:layout_width="345dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="45dp"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/schedule"
+        android:layout_width="345dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="90dp"
+        android:textSize="30sp" />
+
+
+</androidx.cardview.widget.CardView>
